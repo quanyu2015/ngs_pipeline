@@ -32,10 +32,9 @@ RUN conda install -yc https://conda.anaconda.org/faircloth-lab illumiprocessor
 # ref: http://bioinformatics.cvr.ac.uk/blog/illumina-adapter-and-primer-sequences/
 RUN git clone https://github.com/etheleon/illumiprocessor.git
 RUN cp /illumiprocessor/illumiprocessor/core.py /miniconda/pkgs/illumiprocessor-2.0.7-py27_1/lib/python2.7/site-packages/illumiprocessor/
+RUN conda list
 
 # shared folders
-# RUN mkdir /data /config
 VOLUME ["/data", "/config"]
 ENTRYPOINT ["illumiprocessor"]
 CMD ["-h"]
-# CMD ["--trimmomatic /miniconda/jar/trimmomatic.jar"]

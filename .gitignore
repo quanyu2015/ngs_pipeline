@@ -2,5 +2,6 @@
 
 doc/
 output/*
+map/*.txt
 tools/megan/data.jar
 

@@ -14,7 +14,8 @@
 ## versions
 
 * FastQC: 0.11.5
-* IllumiProcessor: ?
+* IllumiProcessor: 2.0.7
+* Trimmomatic: 0.32
 * SortMeRNA: 2.1
 * DIAMOND: 0.7.12
 * MEGAN: Ultimate_unix_6_3_9
