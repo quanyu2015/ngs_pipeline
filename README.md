@@ -2,13 +2,14 @@
 
 ## List of files in different directories:
 
-> input/
->
-> *.fastq.gz jy.0102.DNA.config
+> input/  
+> *.fastq.gz  
+> jy.0102.DNA.config  
 > 
-> map/
->
-> gi2kegg.map  gi2tax-Feb2016X.bin  nr.dmnd
+> map/  
+> gi2kegg.map  
+> gi2tax-Feb2016X.bin  
+> nr.dmnd
 
 ## versions
 
