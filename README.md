@@ -1,16 +1,18 @@
-# List of files in different directories:
+# Pipeline for Metagenomics NGS data analysis
 
-input/
-*.fastq.gz jy.0102.DNA.config
+## List of files in different directories:
 
-map/
-gi2kegg.map  gi2tax-Feb2016X.bin  nr.dmnd
+> input/
+> *.fastq.gz jy.0102.DNA.config
+> 
+> map/
+> gi2kegg.map  gi2tax-Feb2016X.bin  nr.dmnd
 
-# versions
+## versions
 
-FastQC: 0.11.5
-IllumiProcessor: ?
-SortMeRNA: 2.1
-DIAMOND: 0.7.12
-MEGAN: Ultimate_unix_6_3_9
+* FastQC: 0.11.5
+* IllumiProcessor: ?
+* SortMeRNA: 2.1
+* DIAMOND: 0.7.12
+* MEGAN: Ultimate_unix_6_3_9
 
