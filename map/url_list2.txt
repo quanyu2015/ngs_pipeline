@@ -1,0 +1,5 @@
+http://ab.inf.uni-tuebingen.de/data/software/megan6/download/prot_acc2tax-March2016.abin.zip
+http://ab.inf.uni-tuebingen.de/data/software/megan6/download/nucl_acc2tax-March2016.abin.zip
+http://ab.inf.uni-tuebingen.de/data/software/megan6/download/gi2tax-Feb2016X.bin.zip
+http://ab.inf.uni-tuebingen.de/data/software/megan6/download/gi2eggnogX.bin.zip
+http://ab.inf.uni-tuebingen.de/data/software/megan6/download/gi2interpro.bin.zip

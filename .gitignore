@@ -1,0 +1,6 @@
+# excluded dirs and files
+
+doc/
+output/*
+tools/megan/data.jar
+
