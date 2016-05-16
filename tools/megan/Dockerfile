@@ -15,7 +15,7 @@ WORKDIR /tmp
 # RUN wget -P /tmp http://ab.inf.uni-tuebingen.de/data/software/megan5/download/MEGAN_unix_5_11_3.sh
 # RUN wget -nv http://ab.inf.uni-tuebingen.de/data/software/megan6/download/MEGAN_Community_unix_6_3_6.sh
 # RUN wget -nv http://ab.inf.uni-tuebingen.de/data/software/megan6/download/MEGAN_Ultimate_unix_6_3_7.sh
-RUN wget -nv http://ab.inf.uni-tuebingen.de/data/software/megan6/download/MEGAN_Ultimate_unix_6_3_9.sh
+RUN wget -nv http://ab.inf.uni-tuebingen.de/data/software/megan6/download/MEGAN_Ultimate_unix_6_4_0.sh
 COPY megan_install_v6 /tmp
 # RUN bash MEGAN_Ultimate_unix_6_3_7.sh < /tmp/megan_install_v6
 RUN bash MEGAN_Ultimate_unix_6_3_9.sh < /tmp/megan_install_v6
