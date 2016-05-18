@@ -69,7 +69,8 @@ RUN perl -I ./local/lib/perl5 Makefile.PL PREFIX=./local/ && \
 VOLUME ["/data/contigs", "data/refSeqProtDB", "data/out", "data/misc"]
 ENV PATH=/usr/local/megan:/tmp/pAss:${PATH}
 RUN echo "export PERL5LIB=/tmp/pAss/local/lib/perl5:/tmp/pAss/local/share/perl/5.22.1:/home/wesley/perl5/lib/perl5" > ~/.bashrc
-
+RUN echo "export R_LIBS=/home/wesley/R_libs
+RUN mkdir /home/wesley/R_libs
 CMD ["/tmp/pAss/maxDiversity --help"]
 
 #################### INSTALLATION ENDS ##############################
