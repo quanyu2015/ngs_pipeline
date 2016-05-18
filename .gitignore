@@ -4,4 +4,5 @@ doc/
 output/*
 map/*.txt
 tools/megan/data.jar
+MEGAN5-academic-license.txt
 
