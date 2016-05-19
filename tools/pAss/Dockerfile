@@ -55,7 +55,7 @@ RUN apt-get install -y git
 #USER wesley
 
 #PASS
-RUN git clone https://github.com/etheleon/pAss.git /tmp/pAss
+RUN git clone -b docker https://github.com/etheleon/pAss.git /tmp/pAss
 
 RUN curl -L https://cpanmin.us | perl - App::cpanminus && \
     cpanm local::lib Carton Module::Install 
@@ -70,6 +70,7 @@ RUN perl Makefile.PL PREFIX=./local/ && \
 ENV PATH=/usr/local/megan:/tmp/pAss:${PATH}
 ENV PERL5LIB=/tmp/pAss/local/lib/perl5:/tmp/pAss/local/share/perl/5.22.1
 RUN R -e 'install.packages("dplyr", repos="http://cran.bic.nus.edu.sg/")'
+RUN R -e 'source("http://bioconductor.org/biocLite.R"); biocLite("Biostrings")'
 CMD ["/tmp/pAss/maxDiversity --help"]
 VOLUME ["/data/contigs", "data/refSeqProtDB", "data/out", "data/misc"]
 
