@@ -1,22 +1,15 @@
-# Pipeline for Metagenomics NGS data analysis
+# Standardised binning Pipeline Metagenomics/Metatranscriptomics
 
-## List of files in different directories:
+We use data plumbing software Luigi and container software Docker to chain the necessary processing steps together:
 
-> input/  
-> *.fastq.gz  
-> jy.0102.DNA.config  
-> 
-> map/  
-> gi2kegg.map  
-> gi2tax-Feb2016X.bin  
-> nr.dmnd
+![workflow](/img/workflow_pipeline.png)
 
-## versions
+1. Preprocessing 
+	a. Read Quality Report (FastQC 0.11.5)
+	b. (IllumiProcessor 2.0.7 + Trimmomatic 0.32)
 
-* FastQC: 0.11.5
-* IllumiProcessor: 2.0.7
-* Trimmomatic: 0.32
-* SortMeRNA: 2.1
-* DIAMOND: 0.7.12
-* MEGAN: Ultimate_unix_6_3_9
+2. RNA depletion [Optional - For whole metatranscriptome only SortMeRNA 2.1]
 
+3. Sequence Homology Search (Diamond 0.7.12)
+
+4. Taxonomic and Functional Binning (MEGAN: Ultimate_unix_6_3_9)
